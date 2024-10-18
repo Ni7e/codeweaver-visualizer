@@ -4,17 +4,16 @@ interface CustomerInfoProps {
   title: string;
   name: string;
   address: string;
-  country?: string;
   oib: string;
 }
 
-const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, country, oib }) => {
+const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, oib }) => {
   return (
-    <div className="bg-gray-100 p-4 rounded-lg">
+    <div className="w-[48%] bg-gray-100 p-4 rounded-lg">
       <h2 className="font-bold text-lg mb-1">{title}</h2>
-      <p className="font-semibold mb-2">OIB: {oib}</p>
+      <p className="font-semibold mb-1">OIB: {oib}</p>
       <p className="font-semibold">{name}</p>
-      <p>{address.replace(/,\s*$/, '')}{country ? `, ${country}` : ''}</p>
+      <p className="whitespace-normal">{address}</p>
     </div>
   );
 };

@@ -7,15 +7,14 @@ import Footer from './Footer';
 
 const Invoice: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg font-sans">
+    <div className="w-[210mm] mx-auto p-8 bg-white font-sans">
       <Header />
-      <hr className="my-6 border-gray-200" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <hr className="my-4 border-gray-200" />
+      <div className="flex justify-between mb-6">
         <CustomerInfo
           title="KUPAC"
           name="Electro Solutions d.o.o."
-          address="Ulica Petra Zrinskog i Krste Frankopana 5, 49 000 Krapina,"
-          country="Hrvatska"
+          address="Ulica Petra Zrinskog i Krste Frankopana 5, 49 000 Krapina, Hrvatska"
           oib="85888847024"
         />
         <CustomerInfo

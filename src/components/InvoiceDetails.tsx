@@ -23,34 +23,16 @@ const InvoiceDetails: React.FC<InvoiceDetailsProps> = ({
     <div className="mb-6">
       <h2 className="text-xl font-bold text-blue-500 mb-4">Ponuda {invoiceNumber}</h2>
       <div className="bg-gray-100 p-4 rounded-lg">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="space-y-2">
-            <div className="flex justify-between">
-              <p className="font-semibold">Vrijeme kreiranja:</p>
-              <p>{creationDate}</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="font-semibold">Ponuda vrijedi do:</p>
-              <p>{validUntil}</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="font-semibold">Datum isporuke:</p>
-              <p>{deliveryDate}</p>
-            </div>
+        <div className="grid grid-cols-2 gap-4 text-sm">
+          <div className="space-y-1">
+            <p><span className="font-semibold">Vrijeme kreiranja:</span> {creationDate}</p>
+            <p><span className="font-semibold">Ponuda vrijedi do:</span> {validUntil}</p>
+            <p><span className="font-semibold">Datum isporuke:</span> {deliveryDate}</p>
           </div>
-          <div className="space-y-2">
-            <div className="flex justify-between">
-              <p className="font-semibold">Obrada dokumenta:</p>
-              <p>{processor}</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="font-semibold">Način plaćanja:</p>
-              <p>{paymentMethod}</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="font-semibold">IBAN za uplatu:</p>
-              <p>{iban}</p>
-            </div>
+          <div className="space-y-1">
+            <p><span className="font-semibold">Obrada dokumenta:</span> {processor}</p>
+            <p><span className="font-semibold">Način plaćanja:</span> {paymentMethod}</p>
+            <p><span className="font-semibold">IBAN za uplatu:</span> {iban}</p>
           </div>
         </div>
       </div>
