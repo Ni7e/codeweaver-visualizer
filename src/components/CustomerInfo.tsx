@@ -14,8 +14,7 @@ const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, count
       <h2 className="font-bold text-lg mb-1">{title}</h2>
       <p className="font-semibold mb-2">OIB: {oib}</p>
       <p className="font-semibold">{name}</p>
-      <p>{address}</p>
-      {country && <p>{country}</p>}
+      <p>{address}{country && `, ${country}`}</p>
     </div>
   );
 };
