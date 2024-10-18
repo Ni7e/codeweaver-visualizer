@@ -13,7 +13,14 @@ const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, oib }
       <h2 className="font-bold text-sm mb-1">{title}</h2>
       <p className="text-sm mb-1"><span className="font-semibold">OIB:</span> {oib}</p>
       <p className="text-sm font-semibold">{name}</p>
-      <p className="text-sm whitespace-normal">{address}</p>
+      <p className="text-sm whitespace-normal">
+        {address.split(',').map((part, index, array) => (
+          <React.Fragment key={index}>
+            <span className="whitespace-nowrap">{part.trim()}</span>
+            {index < array.length - 1 && <span>,&nbsp;</span>}
+          </React.Fragment>
+        ))}
+      </p>
     </div>
   );
 };
