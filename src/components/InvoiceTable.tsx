@@ -3,7 +3,7 @@ import React from 'react';
 const InvoiceTable: React.FC = () => {
   return (
     <div className="mb-8">
-      <table className="w-full text-sm">
+      <table className="w-full text-sm border border-gray-200">
         <thead>
           <tr className="bg-gray-100">
             <th className="p-2 text-left font-semibold">R.br.</th>
