@@ -21,31 +21,27 @@ const InvoiceDetails: React.FC<InvoiceDetailsProps> = ({
 }) => {
   return (
     <div className="mb-6">
-      <h2 className="text-xl font-bold text-blue-500 mb-4">Ponuda {invoiceNumber}</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div>
-          <p className="font-semibold">Vrijeme kreiranja:</p>
-          <p>{creationDate}</p>
+      <h2 className="text-3xl font-bold text-blue-600 mb-4">Ponuda {invoiceNumber}</h2>
+      <div className="bg-gray-100 rounded-lg overflow-hidden">
+        <div className="grid grid-cols-3 gap-0.5 bg-blue-600 text-white font-semibold">
+          <div className="p-2">Vrijeme kreiranja:</div>
+          <div className="p-2">Obrada dokumenta:</div>
+          <div className="p-2">Način plaćanja:</div>
         </div>
-        <div>
-          <p className="font-semibold">Ponuda vrijedi do:</p>
-          <p>{validUntil}</p>
+        <div className="grid grid-cols-3 gap-0.5 bg-white">
+          <div className="p-2">{creationDate}</div>
+          <div className="p-2">{processor}</div>
+          <div className="p-2">{paymentMethod}</div>
         </div>
-        <div>
-          <p className="font-semibold">Datum isporuke:</p>
-          <p>{deliveryDate}</p>
+        <div className="grid grid-cols-3 gap-0.5 bg-blue-600 text-white font-semibold">
+          <div className="p-2">Ponuda vrijedi do:</div>
+          <div className="p-2">Datum isporuke:</div>
+          <div className="p-2">IBAN za uplatu:</div>
         </div>
-        <div>
-          <p className="font-semibold">Obrada dokumenta:</p>
-          <p>{processor}</p>
-        </div>
-        <div>
-          <p className="font-semibold">Način plaćanja:</p>
-          <p>{paymentMethod}</p>
-        </div>
-        <div>
-          <p className="font-semibold">IBAN za uplatu:</p>
-          <p>{iban}</p>
+        <div className="grid grid-cols-3 gap-0.5 bg-white">
+          <div className="p-2">{validUntil}</div>
+          <div className="p-2">{deliveryDate}</div>
+          <div className="p-2">{iban}</div>
         </div>
       </div>
     </div>
