@@ -23,7 +23,7 @@ const InvoiceDetails: React.FC<InvoiceDetailsProps> = ({
     <div className="mb-6">
       <h2 className="text-xl font-bold text-blue-500 mb-4">Ponuda {invoiceNumber}</h2>
       <div className="bg-gray-100 p-4 rounded-lg">
-        <div className="grid grid-cols-2 gap-4 text-sm">
+        <div className="grid grid-cols-2 gap-6 text-sm">
           <div className="space-y-1">
             <p className="flex justify-between"><span className="font-semibold">Vrijeme kreiranja:</span> <span className="text-right">{creationDate}</span></p>
             <p className="flex justify-between"><span className="font-semibold">Ponuda vrijedi do:</span> <span className="text-right">{validUntil}</span></p>
