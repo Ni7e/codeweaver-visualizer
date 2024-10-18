@@ -2,23 +2,23 @@ import React from 'react';
 
 const InvoiceTable: React.FC = () => {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full mb-6">
+    <div className="overflow-x-auto mb-8">
+      <table className="w-full">
         <thead>
           <tr className="bg-gray-100">
-            <th className="p-2 text-left">R.br.</th>
-            <th className="p-2 text-left">Šifra</th>
-            <th className="p-2 text-left">Naziv proizvoda/usluge</th>
-            <th className="p-2 text-right">Količina (kom)</th>
-            <th className="p-2 text-right">Jedinična cijena</th>
-            <th className="p-2 text-right">Ukupna cijena</th>
-            <th className="p-2 text-right">Popust (%)</th>
-            <th className="p-2 text-right">Iznos popusta</th>
-            <th className="p-2 text-right">Iznos stavke</th>
+            <th className="p-2 text-left font-semibold">R.br.</th>
+            <th className="p-2 text-left font-semibold">Šifra</th>
+            <th className="p-2 text-left font-semibold">Naziv proizvoda/usluge</th>
+            <th className="p-2 text-right font-semibold">Količina (kom)</th>
+            <th className="p-2 text-right font-semibold">Jedinična cijena</th>
+            <th className="p-2 text-right font-semibold">Ukupna cijena</th>
+            <th className="p-2 text-right font-semibold">Popust (%)</th>
+            <th className="p-2 text-right font-semibold">Iznos popusta</th>
+            <th className="p-2 text-right font-semibold">Iznos stavke</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr className="border-b border-gray-200">
             <td className="p-2">1</td>
             <td className="p-2"></td>
             <td className="p-2">Oglas za posao - 15 dana</td>
@@ -31,7 +31,7 @@ const InvoiceTable: React.FC = () => {
           </tr>
         </tbody>
         <tfoot>
-          <tr className="font-bold">
+          <tr className="font-bold bg-gray-50">
             <td colSpan={5} className="p-2 text-right">Ukupno:</td>
             <td className="p-2 text-right">590,00 €</td>
             <td colSpan={2}></td>
@@ -39,8 +39,8 @@ const InvoiceTable: React.FC = () => {
           </tr>
         </tfoot>
       </table>
-      <div className="text-right font-bold mb-6">
-        <p>Iznos za uplatu: 295,00 €</p>
+      <div className="text-right font-bold text-xl mt-4 bg-blue-100 p-4 rounded">
+        <p>Iznos za uplatu: <span className="text-blue-700">295,00 €</span></p>
       </div>
     </div>
   );
