@@ -16,8 +16,8 @@ const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, oib }
       <div className="text-sm flex flex-wrap">
         {address.split(',').map((part, index) => (
           <React.Fragment key={index}>
-            <span className="whitespace-nowrap mr-1">{part.trim()}</span>
-            {index < address.split(',').length - 1 && <span className="mr-1">,</span>}
+            <span className="whitespace-nowrap">{part.trim()}</span>
+            {index < address.split(',').length - 1 && <span>,</span>}
           </React.Fragment>
         ))}
       </div>
