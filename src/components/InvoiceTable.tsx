@@ -9,10 +9,10 @@ const InvoiceTable: React.FC = () => {
             <th className="p-2 text-left font-semibold">R.br.</th>
             <th className="p-2 text-left font-semibold">Šifra</th>
             <th className="p-2 text-left font-semibold">Naziv proizvoda/usluge</th>
-            <th className="p-2 text-right font-semibold">Količina</th>
-            <th className="p-2 text-right font-semibold">Jed. cijena</th>
-            <th className="p-2 text-right font-semibold">Ukupno</th>
-            <th className="p-2 text-right font-semibold">Popust</th>
+            <th className="p-2 text-right font-semibold">Količina (kom)</th>
+            <th className="p-2 text-right font-semibold">Jedinična cijena</th>
+            <th className="p-2 text-right font-semibold">Ukupna cijena</th>
+            <th className="p-2 text-right font-semibold">Popust (%)</th>
             <th className="p-2 text-right font-semibold">Iznos popusta</th>
             <th className="p-2 text-right font-semibold">Iznos stavke</th>
           </tr>
