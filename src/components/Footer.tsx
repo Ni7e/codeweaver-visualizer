@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
       <p>IBAN: HR5724020061140441485 (Erste&Steiermarkische Bank d.d., Zagreb)</p>
       <p>Molimo Vas da prilikom plaćanja u rubriku "Poziv na broj" obavezno navedete broj ponude.</p>
       <hr className="my-6 border-gray-300" />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-        <p>Raditi, obrt za poslovne usluge, vl. Hrvoje Brkić</p>
+      <div className="text-center space-y-1">
+        <p className="font-semibold">Raditi, obrt za poslovne usluge, vl. Hrvoje Brkić</p>
         <p>Božidara Magovca 9, 10000 Zagreb, Hrvatska • OIB.: 58282261804</p>
         <p>Banka: Erste&Steiermarkische Bank d.d. • SWIFT: ESBCHR22 • IBAN: HR5724020061140441485</p>
       </div>
