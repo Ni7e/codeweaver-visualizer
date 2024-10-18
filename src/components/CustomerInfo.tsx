@@ -10,10 +10,10 @@ interface CustomerInfoProps {
 const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, oib }) => {
   return (
     <div className="w-[48%] bg-gray-100 p-4 rounded-lg">
-      <h2 className="font-bold text-lg mb-1">{title}</h2>
-      <p className="font-semibold mb-1">OIB: {oib}</p>
-      <p className="font-semibold">{name}</p>
-      <p className="whitespace-normal">{address}</p>
+      <h2 className="font-bold text-sm mb-1">{title}</h2>
+      <p className="text-sm mb-1"><span className="font-semibold">OIB:</span> {oib}</p>
+      <p className="text-sm font-semibold">{name}</p>
+      <p className="text-sm whitespace-normal">{address}</p>
     </div>
   );
 };
