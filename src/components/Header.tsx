@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
-    <div className="flex flex-col items-center space-y-4">
+    <div className="flex justify-center items-center space-x-4">
       <div className="bg-gray-100 p-2 rounded-lg">
         <Globe className="w-8 h-8 text-blue-500" />
       </div>
