@@ -21,7 +21,7 @@ const InvoiceTable: React.FC = () => {
           <tr className="border-b border-gray-200">
             <td className="p-2">1</td>
             <td className="p-2"></td>
-            <td className="p-2">Oglas za posao - 15 dana</td>
+            <td className="p-2 whitespace-nowrap">Oglas za posao - 15 dana</td>
             <td className="p-2 text-right">1</td>
             <td className="p-2 text-right">590,00 €</td>
             <td className="p-2 text-right">590,00 €</td>
