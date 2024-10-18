@@ -33,9 +33,9 @@ const InvoiceTable: React.FC = () => {
         <tfoot>
           <tr className="font-bold bg-gray-50">
             <td colSpan={5} className="p-2 text-right">Ukupno:</td>
-            <td className="p-2 text-right">590,00 €</td>
+            <td className="p-2 text-right whitespace-nowrap">590,00 €</td>
             <td colSpan={2}></td>
-            <td className="p-2 text-right">295,00 €</td>
+            <td className="p-2 text-right whitespace-nowrap">295,00 €</td>
           </tr>
         </tfoot>
       </table>
