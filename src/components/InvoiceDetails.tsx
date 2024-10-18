@@ -25,14 +25,14 @@ const InvoiceDetails: React.FC<InvoiceDetailsProps> = ({
       <div className="bg-gray-100 p-4 rounded-lg">
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div className="space-y-1">
-            <p><span className="font-semibold">Vrijeme kreiranja:</span> {creationDate}</p>
-            <p><span className="font-semibold">Ponuda vrijedi do:</span> {validUntil}</p>
-            <p><span className="font-semibold">Datum isporuke:</span> {deliveryDate}</p>
+            <p className="flex justify-between"><span className="font-semibold">Vrijeme kreiranja:</span> <span className="text-right">{creationDate}</span></p>
+            <p className="flex justify-between"><span className="font-semibold">Ponuda vrijedi do:</span> <span className="text-right">{validUntil}</span></p>
+            <p className="flex justify-between"><span className="font-semibold">Datum isporuke:</span> <span className="text-right">{deliveryDate}</span></p>
           </div>
           <div className="space-y-1">
-            <p><span className="font-semibold">Obrada dokumenta:</span> {processor}</p>
-            <p><span className="font-semibold">Način plaćanja:</span> {paymentMethod}</p>
-            <p><span className="font-semibold">IBAN za uplatu:</span> {iban}</p>
+            <p className="flex justify-between"><span className="font-semibold">Obrada dokumenta:</span> <span className="text-right">{processor}</span></p>
+            <p className="flex justify-between"><span className="font-semibold">Način plaćanja:</span> <span className="text-right">{paymentMethod}</span></p>
+            <p className="flex justify-between"><span className="font-semibold">IBAN za uplatu:</span> <span className="text-right">{iban}</span></p>
           </div>
         </div>
       </div>
