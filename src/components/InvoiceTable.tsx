@@ -40,7 +40,7 @@ const InvoiceTable: React.FC = () => {
         </tfoot>
       </table>
       <div className="text-right font-bold text-xl mt-4 bg-blue-100 p-4 rounded">
-        <p>Iznos za uplatu: <span className="text-blue-700">295,00 €</span></p>
+        <p>Iznos za uplatu: <span className="text-blue-700 whitespace-nowrap">295,00 €</span></p>
       </div>
     </div>
   );
