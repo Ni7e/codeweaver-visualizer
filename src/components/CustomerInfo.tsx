@@ -9,7 +9,7 @@ interface CustomerInfoProps {
 
 const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, oib }) => {
   return (
-    <div className="w-full md:w-[48%] bg-gray-100 p-4 relative rounded aspect-[2/1]">
+    <div className="w-full md:w-[48%] bg-gray-100 p-4 relative rounded aspect-[3/1]">
       <div className="absolute top-0 left-0 right-0 h-1 bg-gray-300 rounded-t"></div>
       <div className="mt-1 h-full flex flex-col justify-between">
         <div>
