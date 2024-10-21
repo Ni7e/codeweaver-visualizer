@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <div className="mt-8 text-xs text-gray-600">
-      <p className="mb-2 font-semibold">NAPOMENA:</p>
+    <div className="mt-6 text-xs text-gray-600">
+      <p className="mb-1 font-semibold">NAPOMENA:</p>
       <p>IBAN: HR5724020061140441485 (Erste&Steiermarkische Bank d.d., Zagreb)</p>
       <p>Molimo Vas da prilikom plaćanja u rubriku "Poziv na broj" obavezno navedete broj ponude.</p>
-      <hr className="my-6 border-gray-300" />
-      <div className="text-center space-y-1">
+      <hr className="my-4 border-gray-300" />
+      <div className="text-center space-y-0.5">
         <p>Raditi, obrt za poslovne usluge, vl. Hrvoje Brkić</p>
         <p>Božidara Magovca 9, 10000 Zagreb, Hrvatska • OIB.: 58282261804</p>
         <p>Banka: Erste&Steiermarkische Bank d.d. • SWIFT: ESBCHR22 • IBAN: HR5724020061140441485</p>

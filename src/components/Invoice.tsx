@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 const Invoice: React.FC = () => {
   return (
-    <div className="w-[210mm] mx-auto p-8 bg-white font-sans">
+    <div className="w-[210mm] mx-auto p-8 bg-white font-sans text-sm">
       <Header />
       <hr className="my-4 border-gray-300" />
       <div className="flex justify-between mb-6">
