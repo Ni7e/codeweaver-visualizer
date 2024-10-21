@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <div className="mt-8 text-sm text-gray-600">
-      <p className="mb-2">NAPOMENA:</p>
+      <p className="mb-2 font-semibold">NAPOMENA:</p>
       <p>IBAN: HR5724020061140441485 (Erste&Steiermarkische Bank d.d., Zagreb)</p>
       <p>Molimo Vas da prilikom plaćanja u rubriku "Poziv na broj" obavezno navedete broj ponude.</p>
       <hr className="my-6 border-gray-300" />

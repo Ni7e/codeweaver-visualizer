@@ -9,7 +9,7 @@ const Invoice: React.FC = () => {
   return (
     <div className="w-[210mm] mx-auto p-8 bg-white font-sans">
       <Header />
-      <hr className="my-4 border-gray-200" />
+      <hr className="my-4 border-gray-300" />
       <div className="flex justify-between mb-6">
         <CustomerInfo
           title="KUPAC"
