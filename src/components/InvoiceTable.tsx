@@ -3,7 +3,7 @@ import React from 'react';
 const InvoiceTable: React.FC = () => {
   return (
     <div className="mb-8 overflow-x-auto">
-      <table className="w-full text-sm border-collapse">
+      <table className="w-full text-xs border-collapse">
         <thead>
           <tr className="bg-gray-200">
             <th className="p-2 text-left font-semibold border">R.br.</th>
@@ -41,7 +41,7 @@ const InvoiceTable: React.FC = () => {
         </tfoot>
       </table>
       <div className="mt-4 text-right">
-        <p className="font-bold">Iznos za uplatu: 295,00 €</p>
+        <p className="font-bold text-sm">Iznos za uplatu: 295,00 €</p>
       </div>
     </div>
   );
