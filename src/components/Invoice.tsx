@@ -35,6 +35,11 @@ const Invoice: React.FC = () => {
           iban="HR5724020061140441485"
         />
         <InvoiceTable />
+        <div className="mt-8 text-xs text-gray-600">
+          <p className="mb-1 font-semibold">NAPOMENA:</p>
+          <p>IBAN: HR5724020061140441485 (Erste&Steiermarkische Bank d.d., Zagreb)</p>
+          <p>Molimo Vas da prilikom plaćanja u rubriku "Poziv na broj" obavezno navedete broj ponude.</p>
+        </div>
       </div>
       <Footer />
     </div>
