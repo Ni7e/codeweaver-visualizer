@@ -11,7 +11,7 @@ const Invoice: React.FC = () => {
       <div className="flex-grow">
         <Header />
         <hr className="my-4 border-gray-300" />
-        <div className="flex justify-between mb-6">
+        <div className="flex flex-col md:flex-row justify-between mb-6 gap-4">
           <CustomerInfo
             title="KUPAC"
             name="Electro Solutions d.o.o."
