@@ -9,15 +9,15 @@ interface CustomerInfoProps {
 
 const CustomerInfo: React.FC<CustomerInfoProps> = ({ title, name, address, oib }) => {
   return (
-    <div className="w-full md:w-[48%] bg-gray-100 p-3 relative rounded aspect-[3.5/1]">
+    <div className="w-full md:w-[48%] bg-gray-100 p-2.5 relative rounded aspect-[3.5/1]">
       <div className="absolute top-0 left-0 right-0 h-1 bg-gray-300 rounded-t"></div>
-      <div className="mt-1 h-full flex flex-col justify-between">
+      <div className="mt-0.5 h-full flex flex-col justify-between">
         <div>
-          <h2 className="font-bold text-xs mb-0.5">{title}</h2>
-          <p className="text-[10px] mb-0.5"><span className="font-semibold">OIB:</span> {oib}</p>
-          <p className="text-xs font-semibold mb-0.5">{name}</p>
+          <h2 className="font-bold text-[11px] mb-0.5">{title}</h2>
+          <p className="text-[9px] mb-0.5"><span className="font-semibold">OIB:</span> {oib}</p>
+          <p className="text-[11px] font-semibold mb-0.5">{name}</p>
         </div>
-        <p className="text-[10px] leading-tight">{address}</p>
+        <p className="text-[9px] leading-tight">{address}</p>
       </div>
     </div>
   );
